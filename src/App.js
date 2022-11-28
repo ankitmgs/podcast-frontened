@@ -8,6 +8,8 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ListenPodcast from "./components/listenPodcast";
 import Footer from "./components/Footer";
+import ManagePodcast from "./components/ManagePodcast";
+import ManageUser from "./components/ManageUser";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route element={<ListenPodcast />} path="/listenPodcast/:id" />
         <Route element={<Podcasts />} path="/podcasts" />
         <Route element={<Publish />} path="/publish" />
+        <Route element={<ManagePodcast />} path="/managepodcast" />
+        <Route element={<ManageUser />} path="/manageuser" />
         <Route path="/" element={<Navigate replace to="/home" />} />       
       </Routes>
       <Footer/>

@@ -57,6 +57,12 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/signup">Signup</NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/managepodcast">Manage Podcast</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/manageuser">Manage User</NavLink>
+              </li>
             </ul>
           </div>
           {/* Collapsible wrapper */}
