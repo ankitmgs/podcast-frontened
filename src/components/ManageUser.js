@@ -21,7 +21,7 @@ const ManageUser = () => {
         const reOpt = {
           method: "DELETE",
         };
-        fetch("http://localhost:5000/podcast/delete/" + id, reOpt)
+        fetch("http://localhost:5000/user/delete/" + id, reOpt)
           .then((res) => {
             if (res.status === 200) {
               Swal.fire("Deleted!", "Your file has been deleted.", "success");

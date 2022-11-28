@@ -74,14 +74,18 @@ const Signup = () => {
                                                             placeholder="Username"
                                                             value={values.username}
                                                             onChange={handleChange}
-                                                            id="username" />
+                                                            id="username" 
+                                                            required
+                                                            />
 
                                                         <TextField style={{ width: "100%", marginBottom: "2rem" }} label="Email" variant="outlined"
                                                             type="email"
                                                             placeholder="Email"
                                                             id="email"
                                                             value={values.email}
-                                                            onChange={handleChange} />
+                                                            onChange={handleChange}
+                                                            required
+                                                             />
 
                                                         <FormControl style={{ width: "100%", marginBottom: "2rem" }} variant="outlined"  >
                                                             <InputLabel htmlFor="outlined-adornment-password" >
@@ -90,7 +94,7 @@ const Signup = () => {
                                                             <OutlinedInput
                                                                 id="password"
                                                                 placeholder="Password"
-
+                                                                required
                                                                 type={showPassword ? "text" : "password"}
                                                                 value={values.password}
                                                                 onChange={handleChange}
